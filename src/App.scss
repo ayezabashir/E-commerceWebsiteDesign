@@ -3,10 +3,6 @@
 $primary-color: #0f3460;
 $white-color: #fff;
 
-html {
-  font-size: 10px;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -42,6 +38,7 @@ label {
   font-size: 15px;
 }
 
+// Head
 .head {
   background: $primary-color;
   color: $white-color;
@@ -56,6 +53,25 @@ label {
     }
     .right {
       text-align: right;
+    }
+  }
+}
+
+// Navbar
+.navbar {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .categories {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navlink {
+      .link {
+        display: none;
+      }
     }
   }
 }
