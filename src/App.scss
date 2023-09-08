@@ -26,19 +26,26 @@ ul li {
 }
 
 label {
-  margin-right: 30px;
   font-size: 14px;
+  margin-left: 30px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1024px;
+  padding: 0 20px;
 }
 
 .icon {
   margin-right: 10px;
   margin-left: 10px;
   font-size: 15px;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
 }
 
 ::placeholder {
@@ -59,12 +66,18 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    flex-wrap: wrap;
     .left {
-      text-align: left;
-    }
-    .right {
-      text-align: right;
+      display: flex;
+      align-items: center;
+      .group {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        label {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }
@@ -76,24 +89,19 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px 0 0;
     .categories {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #f6f9fc;
-      padding: 0 20px;
-      border-radius: 5px;
       margin-top: 5px;
       margin-bottom: 10px;
-      height: 8vh;
+      height: 7vh;
       color: $primary-color;
       .icon {
         font-size: 18px;
       }
       .big {
         font-size: 30px;
-        margin-right: 20px;
       }
     }
     .navlink {
@@ -129,7 +137,6 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px 0 15px;
     .logo {
       img {
         width: 100px;
@@ -149,30 +156,38 @@ label {
         font-size: 22px;
       }
       input {
-        border: none;
-        outline: none;
+        padding-left: 10px;
         width: 100%;
         font-family: "Poppins", sans-serif;
       }
       span {
+        font-size: 14px;
         width: 30%;
         text-align: right;
       }
     }
+
     .icons {
       display: flex;
-      align-items: center;
+      align-items: baseline;
+      .icon {
+        background: #f0f0f0;
+        border-radius: 50%;
+        font-size: 30px;
+        padding: 6px;
+        cursor: pointer;
+        &:hover {
+          color: $primary-color;
+        }
+      }
       .cart {
         position: relative;
-        .icon {
-          font-size: 20px;
-        }
         span {
           position: absolute;
-          top: -10px;
-          right: 0;
+          top: -6px;
+          right: 6px;
           width: 15px;
-          height: 15px;
+          height: 14px;
           font-size: 10px;
           border-radius: 50%;
           text-align: center;
@@ -212,6 +227,25 @@ label {
   body {
     position: relative;
   }
+  //search
+  .search {
+    .container {
+      .logo {
+        img {
+          width: 70px;
+        }
+      }
+      .search-box {
+        .icon {
+          display: none;
+        }
+        span {
+          width: 40%;
+        }
+      }
+    }
+  }
+  // navbar
   .navbar {
     .container {
       .navlink {
@@ -221,8 +255,6 @@ label {
         .toggle {
           display: block;
           background: transparent;
-          border: none;
-          outline: none;
           color: $primary-color;
           cursor: pointer;
           .open {
@@ -249,12 +281,39 @@ label {
           height: 100vh;
           padding: 50px 25px;
           line-height: 7vh;
+          box-shadow: 0 18px 11px 0 #999;
           li {
             a {
               color: $white-color;
               text-transform: uppercase;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // head
+  .head {
+    .container {
+      .left {
+        flex-direction: column;
+        align-items: start;
+        .group {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  // search
+  .search {
+    .container {
+      .search-box {
+        margin-left: 10px;
+        span {
+          display: none;
         }
       }
     }
