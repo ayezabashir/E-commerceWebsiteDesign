@@ -2,20 +2,19 @@ import './App.scss'
 import Header from './components/header/header'
 import {
   BrowserRouter as Router,
-  // Switch,
-  // Route,
+  Routes,
+  Route,
 } from "react-router-dom";
+import Pages from './pages/Pages';
 function App() {
 
   return (
     <>
       <Router>
         <Header />
-        {/* <Switch> */}
-        {/* <Route exact path='/'>
-            
-          </Route> */}
-        {/* </Switch> */}
+        <Routes>
+          <Route path='/' element={<Pages />} />
+        </Routes>
       </Router>
     </>
   )
