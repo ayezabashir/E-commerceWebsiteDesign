@@ -295,6 +295,9 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  ::placeholder {
+    font-size: 12px;
+  }
   // head
   .head {
     .container {
@@ -312,8 +315,22 @@ button {
     .container {
       .search-box {
         margin-left: 10px;
+        input {
+          padding: 0;
+        }
         span {
           display: none;
+        }
+      }
+      .icons {
+        .icon {
+          font-size: 20px;
+          padding: 4px;
+          margin-right: 0;
+        }
+        .cart {
+          span {
+          }
         }
       }
     }
