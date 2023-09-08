@@ -46,6 +46,10 @@ label {
   font-family: "Poppins", sans-serif;
 }
 
+.d-none {
+  display: none;
+}
+
 // Head
 .head {
   background: $primary-color;
@@ -67,17 +71,51 @@ label {
 
 // Navbar
 .navbar {
+  box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    padding: 0 24px 0 0;
     .categories {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: #f6f9fc;
+      padding: 0 20px;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      height: 8vh;
+      color: $primary-color;
+      .icon {
+        font-size: 18px;
+      }
+      .big {
+        font-size: 30px;
+        margin-right: 20px;
+      }
     }
     .navlink {
+      ul {
+        li {
+          margin-left: 30px;
+          a {
+            transition: 0.5s;
+            font-size: 15px;
+            &:hover {
+              color: $hover-color;
+            }
+          }
+        }
+      }
       .link {
+        display: flex;
+      }
+      .toggle {
+        display: none;
+      }
+      .mobileMenulink {
         display: none;
       }
     }
@@ -91,6 +129,7 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 24px 0 15px;
     .logo {
       img {
         width: 100px;
@@ -139,6 +178,83 @@ label {
           text-align: center;
           background: $hover-color;
           color: $white-color;
+        }
+      }
+    }
+  }
+}
+.search.active {
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: $white-color;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 954px) {
+  .navbar {
+    .container {
+      .navlink {
+        ul {
+          li {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  .navbar {
+    .container {
+      .navlink {
+        .link {
+          display: none;
+        }
+        .toggle {
+          display: block;
+          background: transparent;
+          border: none;
+          outline: none;
+          color: $primary-color;
+          cursor: pointer;
+          .open {
+            font-size: 21px;
+          }
+          .close {
+            position: absolute;
+            top: 26px;
+            z-index: 1;
+            left: 150px;
+            background-color: white;
+            border-radius: 50%;
+            color: #e94560;
+            padding: 3px;
+            font-size: 21px;
+          }
+        }
+        .mobileMenulink {
+          display: block;
+          position: absolute;
+          background: $primary-color;
+          left: 0;
+          top: 0;
+          height: 100vh;
+          padding: 50px 25px;
+          line-height: 7vh;
+          li {
+            a {
+              color: $white-color;
+              text-transform: uppercase;
+            }
+          }
         }
       }
     }

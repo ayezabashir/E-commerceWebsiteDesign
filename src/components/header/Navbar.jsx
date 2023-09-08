@@ -8,12 +8,12 @@ const Navbar = () => {
         <header className="navbar">
             <div className="container">
                 <div className="categories">
-                    <PiGridFour className='icon' />
+                    <PiGridFour className='icon big' />
                     <h4>Categories</h4>
                     <AiFillCaretDown className='icon' />
                 </div>
                 <div className="navlink">
-                    <ul className={mobileMenu ? 'nav-links-MobileMenu' : 'link'} onClick={() => setMobileMenu(false)}>
+                    <ul className='link'>
                         <li>
                             <Link to='/'>home</Link>
                         </li>
@@ -35,9 +35,29 @@ const Navbar = () => {
                     </ul>
                     <button className='toggle' onClick={() => setMobileMenu(!mobileMenu)}>
                         {
-                            mobileMenu ? <AiOutlineClose className='icon' /> : <AiOutlineMenu className='icon' />
+                            mobileMenu ? <AiOutlineClose className='icon close' /> : <AiOutlineMenu className='icon open' />
                         }
                     </button>
+                    <ul className={mobileMenu ? 'mobileMenulink' : 'd-none'}>
+                        <li>
+                            <Link to='/'>home</Link>
+                        </li>
+                        <li>
+                            <Link to='/pages'>pages</Link>
+                        </li>
+                        <li>
+                            <Link to='/user'>user account</Link>
+                        </li>
+                        <li>
+                            <Link to='/vendor'>vendor account</Link>
+                        </li>
+                        <li>
+                            <Link to='/track'>track my order</Link>
+                        </li>
+                        <li>
+                            <Link to='/contact'>contact</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>

@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.webp'
 import { BiSearchAlt2, BiSolidUser, BiCart } from 'react-icons/bi'
 const Search = () => {
+    window.addEventListener('scroll', function () {
+        const search = this.document.querySelector('.search');
+        search.classList.toggle('active', window.scrollY > 100)
+    })
     return (
         <section className="search">
             <div className="container">
