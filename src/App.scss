@@ -209,6 +209,29 @@ button {
   transition: 0.5s;
 }
 
+// Category
+.category {
+  width: 23%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  padding: 15px 0;
+  border-radius: 5px;
+  .box {
+    transition: 0.5s;
+    padding: 0 20px;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+      object-fit: contain;
+    }
+    span {
+      margin: 10px 20px;
+      text-transform: capitalize;
+    }
+  }
+}
+
 @media screen and (max-width: 954px) {
   .navbar {
     .container {
