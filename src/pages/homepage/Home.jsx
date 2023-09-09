@@ -1,5 +1,5 @@
 import Categories from "../../components/categories/Categories"
-import SlideCard from "../../components/slide/SlideCard"
+import Slider from "../../components/slide/Slider"
 
 const Home = () => {
     return (
@@ -7,7 +7,7 @@ const Home = () => {
             <section className="home">
                 <div className="container">
                     <Categories />
-                    <SlideCard />
+                    <Slider />
                 </div>
             </section>
         </>
