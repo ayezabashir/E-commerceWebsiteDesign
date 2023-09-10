@@ -7,7 +7,7 @@ const Categories = () => {
                 cat.map(item => (
                     <div className="box" key={item.id}>
                         <img src={item.catImg} alt="" />
-                        <span>{item.catName}</span>
+                        <p>{item.catName}</p>
                     </div>
                 ))
             }

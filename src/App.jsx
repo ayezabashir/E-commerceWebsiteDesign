@@ -6,14 +6,18 @@ import {
   Route,
 } from "react-router-dom";
 import Pages from './pages/Pages';
+import { deals } from './assets/data/data';
+import { useState } from 'react';
 function App() {
 
+  const { productItems } = deals;
+  const [cardItem, setCardItem] = useState([])
   return (
     <>
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Pages />} />
+          <Route path='/' element={<Pages productItems={productItems} />} />
         </Routes>
       </Router>
     </>

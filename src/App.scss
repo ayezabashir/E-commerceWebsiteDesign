@@ -46,6 +46,7 @@ input,
 button {
   border: none;
   outline: none;
+  background: transparent;
 }
 
 ::placeholder {
@@ -237,23 +238,25 @@ button {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
   border-radius: 5px;
-  width: 35vw;
+  width: 30%;
   .box {
+    display: flex;
     transition: 0.5s;
     padding: 0 0 0 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
     img {
       width: 30px;
       height: 30px;
       margin-top: 10px;
       object-fit: contain;
     }
-    span {
-      margin: 0 0 10px 20px;
+    p {
+      margin-left: 20px;
+      margin-top: 10px;
+      display: inline;
       text-transform: capitalize;
-    }
-    &:hover {
-      background: $primary-color;
-      cursor: pointer;
     }
   }
 }
@@ -262,7 +265,7 @@ button {
 .slider {
   margin-left: 20px;
   padding: 10px;
-  width: 65vw;
+  width: 70%;
   .box {
     display: flex !important;
     justify-content: space-between;
@@ -281,6 +284,18 @@ button {
       width: 30%;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+// flash deals
+.flash {
+  .container {
+    display: flex;
+    .heading {
+      .icon {
+        color: $hover-color;
       }
     }
   }
