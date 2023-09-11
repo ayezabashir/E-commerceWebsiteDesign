@@ -450,10 +450,18 @@ button {
           }
         }
         .details {
+          width: 30%;
           margin-top: 20px;
           display: flex;
           flex-direction: column;
           .cart-details {
+            h3 {
+              margin-bottom: 15px;
+            }
+            h4 {
+              display: flex;
+              font-weight: 500;
+            }
           }
         }
       }
