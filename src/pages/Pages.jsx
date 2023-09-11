@@ -2,10 +2,10 @@
 import FlashDeal from './flashdeals/FlashDeal'
 import Home from './homepage/Home'
 
-const Pages = ({ productItems }) => {
+const Pages = ({ productItems, cartItem, addToCart }) => {
     return (
         <>
-            <Home />
+            <Home cartItem={cartItem} />
             <FlashDeal productItems={productItems} />
         </>
     )

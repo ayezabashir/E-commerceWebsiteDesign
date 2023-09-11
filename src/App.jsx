@@ -8,16 +8,25 @@ import {
 import Pages from './pages/Pages';
 import { deals } from './assets/data/data';
 import { useState } from 'react';
+import Cart from './cart/Cart';
 function App() {
 
   const { productItems } = deals;
-  const [cardItem, setCardItem] = useState([])
+  const [cartItem, setCartItem] = useState([])
+  const addToCart = (product) => {
+    const productExit = cartItem.find((item) => item.id === product.id)
+    if (productExit) {
+      setCartItem(cartItem.map((item) =>
+        (item.id === product.id ? { ...productExit, qty: productExit.qty + 1 } : item)))
+    }
+  }
   return (
     <>
       <Router>
-        <Header />
+        <Header cartItem={cartItem} />
         <Routes>
-          <Route path='/' element={<Pages productItems={productItems} />} />
+          <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart} />} />
+          <Route path='/cart' element={<Cart cartItem={cartItem} addToCart={addToCart} />} />
         </Routes>
       </Router>
     </>
