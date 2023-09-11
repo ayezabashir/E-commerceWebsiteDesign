@@ -15,37 +15,39 @@ const Cart = ({ cartItem, addToCart, decreaseQty }) => {
                                 <div className="img">
                                     <img src={item.cover} alt='' />
                                 </div>
-                                <div className="cart-details">
-                                    <h3>{item.name}</h3>
-                                    <h4>${item.price}.00</h4>
-                                    <h4>Quantity: {item.qty}</h4>
-                                    <span>${productQty}.00</span>
-                                </div>
-                                <div className="cart-items-function">
-                                    <div className="removeCart">
-                                        <button>
-                                            <RxCross2 className='icon' />
-                                        </button>
+                                <div className='details'>
+                                    <div className="cart-details">
+                                        <h3>{item.name}</h3>
+                                        <h4>${item.price}.00</h4>
+                                        <h4>Quantity: {item.qty}</h4>
+                                        <span>${productQty}.00</span>
                                     </div>
-                                    <div className="incCart">
-                                        <button onClick={() => addToCart(item)}>
-                                            <AiOutlinePlusCircle className='icon' />
-                                        </button>
-                                        <button onClick={() => decreaseQty(item)}>
-                                            <AiOutlineMinusCircle className='icon' />
-                                        </button>
+                                    <div className="cart-items-function">
+                                        <div className="removeCart">
+                                            <button>
+                                                <RxCross2 className='icon' />
+                                            </button>
+                                        </div>
+                                        <div className="incCart">
+                                            <button onClick={() => addToCart(item)}>
+                                                <AiOutlinePlusCircle className='icon' />
+                                            </button>
+                                            <button onClick={() => decreaseQty(item)}>
+                                                <AiOutlineMinusCircle className='icon' />
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="cart-item-price"></div>
                             </div>
                         )
                     })}
-                    <div className="cart-total">
-                        <h2>Cart Summary</h2>
-                        <div className="summary">
-                            <h4>Total Price: </h4>
-                            <h3>${totalPrice}.00</h3>
-                        </div>
+                </div>
+                <div className="cart-total">
+                    <h2>Cart Summary</h2>
+                    <div className="summary">
+                        <h4>Total Price: </h4>
+                        <h3>${totalPrice}.00</h3>
                     </div>
                 </div>
             </div>
