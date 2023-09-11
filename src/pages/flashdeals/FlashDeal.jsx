@@ -2,7 +2,7 @@
 import FlashCard from "../../components/flashcard/FlashCard"
 import { AiFillThunderbolt } from 'react-icons/ai'
 
-const FlashDeal = ({ productItems }) => {
+const FlashDeal = ({ productItems, addToCart }) => {
     return (
         <>
             <section className="flash">
@@ -11,7 +11,7 @@ const FlashDeal = ({ productItems }) => {
                         <AiFillThunderbolt className="icon" />
                         <h1>Flash Deals</h1>
                     </div>
-                    <FlashCard productItems={productItems} />
+                    <FlashCard productItems={productItems} addToCart={addToCart} />
                 </div>
             </section>
         </>

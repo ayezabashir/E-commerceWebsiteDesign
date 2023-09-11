@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
 
 $primary-color: #8cc63f;
-$secondary-color: #f0f0f0;
+$secondary-color: #f7f7f7;
 $light-color: #ededed;
 $white-color: #fff;
 $hover-color: #e94560;
@@ -39,7 +39,6 @@ label {
 
 .icon {
   margin-right: 10px;
-  margin-left: 10px;
   font-size: 15px;
 }
 
@@ -425,6 +424,21 @@ button {
             }
           }
         }
+      }
+    }
+  }
+}
+
+// cart
+.cart-items {
+  .container {
+    margin-top: 20px;
+    display: flex;
+    .cart-details {
+      .cart-list {
+        display: flex;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 5px 0 #d4d4d4;
       }
     }
   }

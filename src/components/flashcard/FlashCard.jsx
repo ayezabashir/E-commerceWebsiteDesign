@@ -28,7 +28,7 @@ const PrevArrow = (props) => {
 
 const FlashCard = ({ productItems, addToCart }) => {
     const [count, setCount] = useState(0);
-    const increment = () => {
+    let increment = () => {
         setCount(count + 1);
     }
     const settings = {
@@ -52,7 +52,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                                     <span className="discount">{item.discount}% Off</span>
                                     <img src={item.cover} alt="" />
                                     <div className="product-like">
-                                        <label>0</label> <br />
+                                        <label>{count}</label> <br />
                                         <AiOutlineHeart className="icon" onClick={increment} />
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                                     </div>
                                     <div className="price">
                                         <h4>${item.price}.00</h4>
-                                        <button onClick={() => addToCart(productItems)}>
+                                        <button onClick={() => addToCart(item)}>
                                             <AiOutlinePlus className='icon' />
                                         </button>
                                     </div>
