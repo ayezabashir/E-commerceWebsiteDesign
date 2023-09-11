@@ -27,7 +27,7 @@ const PrevArrow = (props) => {
 
 const FlashCard = ({ productItems }) => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -61,7 +61,7 @@ const FlashCard = ({ productItems }) => {
                                         <AiFillStar className="icon" />
                                     </div>
                                     <div className="price">
-                                        <h4>{item.price}.00</h4>
+                                        <h4>${item.price}.00</h4>
                                         <button>
                                             <AiOutlinePlus className='icon' />
                                         </button>
