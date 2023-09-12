@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.webp'
+import logo from '/mini-logo.webp'
 import { BiSearchAlt2, BiSolidUser, BiCart } from 'react-icons/bi'
 const Search = ({ cartItem }) => {
     window.addEventListener('scroll', function () {
@@ -23,7 +23,7 @@ const Search = ({ cartItem }) => {
                     <div className="cart">
                         <Link to='/cart'>
                             <BiCart className='icon' />
-                            <span>{cartItem.length === 0 ? "" : cartItem.length}</span>
+                            <span>{cartItem.length === 0 ? "0" : cartItem.length}</span>
                         </Link>
                     </div>
                 </div>
