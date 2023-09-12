@@ -438,11 +438,11 @@ button {
     .cart-details {
       width: 60%;
       .cart-list {
+        position: relative;
         background: $white-color;
         border-radius: 10px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 20px;
         box-shadow: 0 3px 5px 0 #d4d4d4;
         .img {
@@ -451,9 +451,10 @@ button {
           }
         }
         .details {
-          width: 30%;
+          width: 90%;
           display: flex;
-          flex-direction: column;
+          padding: 0 30px;
+          justify-content: space-between;
           .cart-details {
             h3 {
               margin-bottom: 15px;
@@ -461,6 +462,53 @@ button {
             h4 {
               display: flex;
               font-weight: 500;
+              margin-bottom: 5px;
+            }
+            span {
+              color: $hover-color;
+            }
+          }
+          .cart-items-function {
+            .removeCart {
+              position: absolute;
+              top: 30px;
+              right: 30px;
+              button {
+                background: $hover-color;
+                color: $white-color;
+                border-radius: 10px;
+                .icon {
+                  font-size: 20px;
+                  padding: 2px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-right: 0;
+                }
+                &:hover {
+                  cursor: pointer;
+                  transition: 0.3s;
+                  transform: scale(1.1);
+                }
+              }
+            }
+            .incCart {
+              display: flex;
+              align-items: center;
+              button {
+                .icon {
+                  color: $primary-color;
+                  font-size: 22px;
+                  margin-right: 0;
+                  margin-left: 20px;
+                  margin-top: 50px;
+                }
+                &:hover {
+                  cursor: pointer;
+                  transition: 0.3s;
+                  transform: scale(1.1);
+                }
+              }
             }
           }
         }
@@ -473,11 +521,19 @@ button {
       border-radius: 10px;
       background: $white-color;
       box-shadow: 0 3px 5px 0 #d4d4d4;
+      h2 {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #999;
+      }
       .summary {
         display: flex;
         justify-content: space-between;
         h4 {
           font-weight: 500;
+        }
+        h3 {
+          color: $hover-color;
+          font-weight: 400;
         }
       }
     }

@@ -47,7 +47,7 @@ const Cart = ({ cartItem, addToCart, decreaseQty }) => {
                     <h2>Cart Summary</h2>
                     <div className="summary">
                         <h4>Total Price: </h4>
-                        <h4>${totalPrice}.00</h4>
+                        <h3>${totalPrice}.00</h3>
                     </div>
                 </div>
             </div>
