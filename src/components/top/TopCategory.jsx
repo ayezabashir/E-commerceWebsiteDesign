@@ -1,5 +1,6 @@
 import { PiGridFour } from 'react-icons/pi'
 import { AiFillCaretRight } from 'react-icons/ai'
+import TopCart from './TopCart'
 const TopCategory = () => {
     return (
         <section className="topCat ">
@@ -14,6 +15,7 @@ const TopCategory = () => {
                         <AiFillCaretRight className='icon' />
                     </div>
                 </div>
+                <TopCart />
             </div>
 
         </section>

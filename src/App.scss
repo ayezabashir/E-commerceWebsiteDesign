@@ -573,6 +573,42 @@ button {
     }
   }
 }
+.topData {
+  border-radius: 5px;
+  background: $white-color;
+  margin-top: 10px;
+  padding: 10px 20px;
+  position: relative;
+  .nametop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    .tleft {
+      position: absolute;
+      top: 15px;
+      left: 24px;
+      background: $primary-color;
+      color: $white-color;
+      padding: 0 10px;
+      border-radius: 50px;
+    }
+    .tright {
+      position: absolute;
+      top: 15px;
+      right: 24px;
+      background: $light-color;
+      color: #000;
+      padding: 0 10px;
+      border-radius: 50px;
+    }
+  }
+  .img {
+    img {
+      width: 100%;
+    }
+  }
+}
 
 @media screen and (max-width: 954px) {
   .navbar {
