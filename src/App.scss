@@ -115,7 +115,7 @@ button {
         font-size: 18px;
       }
       .big {
-        font-size: 30px;
+        font-size: 26px;
       }
     }
     .navlink {
@@ -540,6 +540,34 @@ button {
         h3 {
           color: $hover-color;
           font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.topCat {
+  margin-top: 20px;
+  .container {
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .heading-left {
+        display: flex;
+        align-items: center;
+        .icon {
+          font-size: 26px;
+          color: $primary-color;
+        }
+      }
+      .heading-right {
+        color: gray;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .icon {
+          margin-left: 5px;
         }
       }
     }
