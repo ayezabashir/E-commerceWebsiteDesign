@@ -178,7 +178,7 @@ export const NewArrivaldata = [
     },
     {
         id: 3,
-        cover: "./images/arrivals/arrivals3.png",
+        cover: "./images/arrivals/arrivals6.png",
         name: "Smart Watch",
         price: "50",
     },
