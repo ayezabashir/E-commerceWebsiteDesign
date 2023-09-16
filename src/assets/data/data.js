@@ -202,7 +202,7 @@ export const NewArrivaldata = [
     },
 ]
 
-export const Ddata = [
+export const Discountdata = [
     {
         id: 1,
         cover: "./images/discount/discount-1.png",

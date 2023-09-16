@@ -609,6 +609,7 @@ button {
     }
   }
 }
+// New Arrivals
 .new-arrivals {
   margin-top: 20px;
   .container {
@@ -649,6 +650,17 @@ button {
           }
         }
       }
+    }
+  }
+}
+// dicount
+.discountcard {
+  border-radius: 5px;
+  margin-top: 10px;
+  background: $white-color;
+  .img {
+    img {
+      width: 100%;
     }
   }
 }
