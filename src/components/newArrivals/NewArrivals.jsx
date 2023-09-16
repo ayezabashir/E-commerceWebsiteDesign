@@ -1,4 +1,5 @@
 import { AiFillCaretRight } from 'react-icons/ai'
+import Cart from './Cart'
 
 const NewArrivals = () => {
     return (
@@ -14,6 +15,7 @@ const NewArrivals = () => {
                         <AiFillCaretRight className='icon' />
                     </div>
                 </div>
+                <Cart />
             </div>
         </section>
     )
