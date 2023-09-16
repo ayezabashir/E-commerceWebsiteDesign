@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Discount from '../components/discount/Discount'
 import NewArrivals from '../components/newArrivals/NewArrivals'
 import TopCategory from '../components/top/TopCategory'
 import FlashDeal from './flashdeals/FlashDeal'
@@ -11,6 +12,7 @@ const Pages = ({ productItems, cartItem, addToCart }) => {
             <FlashDeal productItems={productItems} addToCart={addToCart} />
             <TopCategory />
             <NewArrivals />
+            <Discount />
         </>
     )
 }
