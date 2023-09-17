@@ -609,61 +609,6 @@ button {
     }
   }
 }
-// New Arrivals
-.new-arrivals {
-  margin-top: 20px;
-  .container {
-    .heading {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .heading-left {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        img {
-          width: 50px;
-          margin-right: 20px;
-        }
-      }
-      .heading-right {
-        color: gray;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        .icon {
-          margin-left: 5px;
-        }
-      }
-    }
-    .content {
-      margin-top: 10px;
-      background: $white-color;
-      border-radius: 5px;
-      display: flex;
-      .newins {
-        margin: 10px;
-        .img {
-          width: 100%;
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
-// dicount
-.discountcard {
-  border-radius: 5px;
-  margin-top: 10px;
-  background: $white-color;
-  .img {
-    img {
-      width: 100%;
-    }
-  }
-}
 
 @media screen and (max-width: 954px) {
   .navbar {
