@@ -152,8 +152,19 @@ button {
     justify-content: space-between;
     align-items: center;
     .logo {
-      img {
-        width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+      .name {
+        margin-left: 5px;
+        font-weight: 800;
+        font-size: 20px;
+        color: $primary-color;
       }
     }
     .search-box {
@@ -690,6 +701,16 @@ button {
   //search
   .search {
     .container {
+      .logo {
+        .img {
+          img {
+            width: 100%;
+          }
+        }
+        .name {
+          display: none;
+        }
+      }
       .search-box {
         .icon {
           display: none;
@@ -772,6 +793,7 @@ button {
         margin-left: 10px;
         input {
           padding: 0;
+          padding-left: 20px;
         }
         span {
           display: none;
@@ -779,9 +801,9 @@ button {
       }
       .icons {
         .icon {
-          font-size: 20px;
+          font-size: 22px;
           padding: 4px;
-          margin-right: 0;
+          margin-left: 5px;
         }
         .cart {
           span {

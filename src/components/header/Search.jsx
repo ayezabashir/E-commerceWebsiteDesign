@@ -11,7 +11,10 @@ const Search = ({ cartItem }) => {
         <section className="search">
             <div className="container">
                 <div className="logo">
-                    <img src={logo} alt='logo' />
+                    <div className="img">
+                        <img src={logo} alt='logo' />
+                    </div>
+                    <div className="name">E-Commerce Store</div>
                 </div>
                 <div className="search-box">
                     <BiSearchAlt2 className='icon' />
