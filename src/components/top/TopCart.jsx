@@ -14,15 +14,17 @@ const TopCart = () => {
             <Slider {...settings}>
                 {
                     Topdata.map(item => (
-                        <div className="topData" key={item.id}>
-                            <div className="nametop">
-                                <div className="tleft">{item.para}</div>
-                                <div className="tright">{item.desc}</div>
+                        <>
+                            <div className="topData" key={item.id}>
+                                <div className="nametop">
+                                    <div className="tleft">{item.para}</div>
+                                    <div className="tright">{item.desc}</div>
+                                </div>
+                                <div className="img">
+                                    <img src={item.cover} alt="" />
+                                </div>
                             </div>
-                            <div className="img">
-                                <img src={item.cover} alt="" />
-                            </div>
-                        </div>
+                        </>
                     ))
                 }
             </Slider>

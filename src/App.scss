@@ -574,10 +574,10 @@ button {
   }
 }
 .topData {
-  border-radius: 5px;
+  border-radius: 10px;
   background: $white-color;
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin: 5px;
+  padding: 10px;
   position: relative;
   .nametop {
     display: flex;
@@ -655,13 +655,17 @@ button {
 }
 // dicount
 .discountcard {
-  border-radius: 5px;
-  margin-top: 10px;
+  border-radius: 10px;
+  margin: 5px;
   background: $white-color;
+  padding: 5px;
   .img {
     img {
       width: 100%;
     }
+  }
+  .desc {
+    padding-left: 10px;
   }
 }
 
