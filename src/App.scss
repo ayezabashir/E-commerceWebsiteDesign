@@ -773,6 +773,15 @@ button {
   }
 }
 
+// Annoucements
+.annoucements {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 954px) {
   .navbar {
     .container {

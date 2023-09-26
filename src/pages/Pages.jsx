@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Annoucements from '../components/annoucements/Annoucements'
 import Discount from '../components/discount/Discount'
 import NewArrivals from '../components/newArrivals/NewArrivals'
 import Shop from '../components/shop/Shop'
@@ -15,6 +16,7 @@ const Pages = ({ productItems, cartItem, addToCart, shopsItem }) => {
             <NewArrivals />
             <Discount />
             <Shop shopsItem={shopsItem} addToCart={addToCart} />
+            <Annoucements />
         </>
     )
 }
