@@ -271,7 +271,7 @@ export const Shopdata = {
         {
             id: 8,
             cover: "./images/shops/shops-2.png",
-            name: "Vivo android one",
+            name: "Vivo android",
             price: "120",
             discount: "10",
         },
@@ -292,7 +292,7 @@ export const Shopdata = {
         {
             id: 11,
             cover: "./images/shops/shops-5.png",
-            name: "Ceats wireless earphone",
+            name: "Wireless earphone",
             price: "80",
             discount: "20 ",
         },
@@ -306,7 +306,7 @@ export const Shopdata = {
         {
             id: 13,
             cover: "./images/shops/shops-8.png",
-            name: "Xeats Bluetooth earphones",
+            name: "Xeats earphones",
             price: "60",
             discount: "5 ",
         },
