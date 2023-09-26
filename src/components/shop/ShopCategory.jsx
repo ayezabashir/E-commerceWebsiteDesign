@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { shopCategory } from "../../assets/data/data"
 
 const ShopCategory = ({ shopsItem, addToCart }) => {

@@ -260,7 +260,7 @@ export const Discountdata = [
 ]
 
 export const Shopdata = {
-    shopItems: [
+    shopsItem: [
         {
             id: 7,
             cover: "./images/shops/shops-1.png",
