@@ -1,9 +1,9 @@
 import { shopCategory } from "../../assets/data/data"
 
-const ShopCategory = () => {
+const ShopCategory = ({ shopsItem, addToCart }) => {
     return (
         <>
-            <div className="category">
+            <div className="shopCategory">
                 <div className="chead">
                     <h2>Brands</h2>
                     <h2>Shops</h2>
@@ -18,7 +18,7 @@ const ShopCategory = () => {
                         </>
                     ))
                 }
-                <div className="box box2">
+                <div className="button box">
                     <button>View All Brands</button>
                 </div>
             </div>
