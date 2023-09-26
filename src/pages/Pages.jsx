@@ -4,6 +4,7 @@ import Discount from '../components/discount/Discount'
 import NewArrivals from '../components/newArrivals/NewArrivals'
 import Shop from '../components/shop/Shop'
 import TopCategory from '../components/top/TopCategory'
+import Wrapper from '../components/wrapper/Wrapper'
 import FlashDeal from './flashdeals/FlashDeal'
 import Home from './homepage/Home'
 
@@ -17,6 +18,7 @@ const Pages = ({ productItems, cartItem, addToCart, shopsItem }) => {
             <Discount />
             <Shop shopsItem={shopsItem} addToCart={addToCart} />
             <Annoucements />
+            <Wrapper />
         </>
     )
 }

@@ -775,10 +775,55 @@ button {
 
 // Annoucements
 .annoucements {
+  margin-top: 20px;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.wrapper {
+  margin-top: 20px;
+  .container {
+    display: flex;
+    .product {
+      background: $white-color;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px #d6d6d6;
+      position: relative;
+      margin: 10px;
+      .img {
+        text-align: center;
+        font-size: 24px;
+        i {
+          background: #ededed;
+          padding: 10px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          width: fit-content;
+          margin: 0 auto;
+        }
+      }
+      h4 {
+        color: $primary-color;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 600;
+      }
+      p {
+        text-align: center;
+        opacity: 0.7;
+      }
+      &:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0 2px 5px 1px #999;
+      }
+    }
   }
 }
 
