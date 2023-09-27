@@ -9,6 +9,7 @@ import Pages from './pages/Pages';
 import { Shopdata, deals } from './assets/data/data';
 import { useState } from 'react';
 import Cart from './cart/Cart';
+import Footer from './components/footer/Footer';
 function App() {
   const { productItems } = deals;
   const { shopsItem } = Shopdata;
@@ -41,6 +42,7 @@ function App() {
           <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopsItem={shopsItem} />} />
           <Route path='/cart' element={<Cart cartItem={cartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   )
