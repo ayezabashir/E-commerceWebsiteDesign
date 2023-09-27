@@ -827,6 +827,50 @@ button {
   }
 }
 
+// Footer
+.footer {
+  margin-top: 40px;
+  background: $primary-color;
+  color: $white-color;
+  .container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    .box {
+      max-width: 350px;
+      h1 {
+        font-size: 30px;
+        font-style: italic;
+      }
+      h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      ul {
+        li {
+          opacity: 0.8;
+        }
+      }
+      p {
+        opacity: 0.8;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .icons {
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        .img {
+          margin-right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 954px) {
   .navbar {
     .container {

@@ -7,14 +7,14 @@ const Footer = () => {
                     <div className="box">
                         <h1>E-commerce Store</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, enim.</p>
-                        <div className="icon">
+                        <div className="icons">
                             <div className="img">
                                 <BsGooglePlay className='icon' />
                                 <span>Google Play Store</span>
                             </div>
                             <div className="img">
                                 <BsApple className='icon' />
-                                <span>App Store</span>
+                                <span>Apple Store</span>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,6 @@ const Footer = () => {
                             <li>Corporate & Bulk Purchasing</li>
                         </ul>
                     </div>
-
                     <div className="box">
                         <h2>Contact Us</h2>
                         <ul>
