@@ -655,7 +655,8 @@ button {
       margin-top: 10px;
       background: $white-color;
       border-radius: 5px;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
       .newins {
         margin: 10px;
         .img {
@@ -960,9 +961,27 @@ button {
       }
     }
   }
+  .new-arrivals {
+    .container {
+      .content {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  .shop {
+    .container {
+      .shopCategory {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .btn-primary {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
   ::placeholder {
     font-size: 12px;
   }
@@ -1015,6 +1034,25 @@ button {
       }
       .slider {
         width: 100%;
+        .box {
+          .left {
+            h1 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .shop {
+    .container {
+      .content {
+        .product-content {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
     }
   }
